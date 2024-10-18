@@ -513,18 +513,17 @@ footer{
             flex-direction: column;
             position: absolute;
             top: 60px;
-            left: 0;
-            width: 100%;
-            background-color: #130338;
-            padding: 10px 0;
+            right: 0;
+            width: 80px;
+            background-color:#f5f1fe;
+            padding: 10px;
             z-index: 1;
         }
 
     .nav-links a {
         font-size: 18px;
-        text-align: center;
-        padding: 10px 0;
-        width: 100%;
+        text-align: right;
+        padding: 10px 15;
     }
         /* When Checkbox is Checked, Show the Menu */
     .menu-checkbox:checked+.hamburger+.nav-links {
