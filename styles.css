@@ -80,25 +80,19 @@ button {
     font-size: 20px;
     font-weight: 600px;
     letter-spacing: 1px;
-    padding: 10px
-    
-    
-}
-button a{
+    padding: 10px;
     color: #ffb5b5;
-    text-decoration: none;
-    font-weight: 600px;
-    
-}
-button a:hover {
-    background: #ffb5b5;
-    color: #130338;
-    
-}
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+
 button:hover {
     background: #ffb5b5;
     border: 2px solid #130338;
-   
+    color: #130338;
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 #logos{
     display: flex;
@@ -273,6 +267,7 @@ ul {
     border: 2px solid #112240;
     padding: 40px 40px;
     border-radius: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -305,6 +300,16 @@ h2{
     color: #112240;
 }
 
+.project-image{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+    
+.project-image:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
 .section-title {
     font-size: 2.5rem;
     margin-bottom: 20px;
@@ -320,6 +325,7 @@ h2{
     padding: 10px 15px;
     text-decoration: none;
     margin: 0px 100px 0px 100px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s, box-shadow 0.3s;
 
 }
@@ -330,6 +336,7 @@ h2{
     padding: 10px 15px;
     text-decoration: none;
     margin: 0 100px 10px 100px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -632,18 +639,42 @@ footer{
     /* Navbar Adjustments */
     #navbar {
         flex-direction: column;
+        align-items: center;
         padding: 10px 0;
+        gap: 15px;  /* Spacing between links */
+        text-align: center;
     }
 
     .nav-links {
-        margin-left: 0;
-        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+            /* Stack links vertically */
+        align-items: center;
+        gap: 10px;
+            /* Add space between each link */
+        margin: 0;
+            /* Remove extra margins */
     }
 
     .nav-links a {
-        font-size: 16px;
-        margin-left: 0;
-        padding: 8px 0;
+        font-size: 18px;
+        margin: 0;
+            /* Ensure no additional space between links */
+        padding: 10px 0;
+            /* Add some padding for better touch targets */
+        width: 100%;
+            /* Ensure links stretch full width */
+        text-align: center;
+    }
+        /* Welcome Section: Center Content and Align in Column */
+    #home {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px 10px;
+            /* Adjust padding for better spacing on mobile */
+        gap: 20px;
+            /* Add spacing between elements */
     }
 
     /* Home Section Adjustments */
@@ -675,7 +706,7 @@ footer{
     .container {
         flex-direction: column;
         align-items: center;
-        padding: 10px;
+        text-align: center;
     }
 
     /* Skills Section Adjustments */
@@ -691,6 +722,14 @@ footer{
         padding: 15px 20px;
         font-size: 14px;
     }
+    .experience {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+            /* Space between experience elements */
+        margin-top: 20px;
+        }
 
     /* Projects Section Adjustments */
     .projects-container {
