@@ -648,7 +648,7 @@ footer{
             /* Adjust padding for better spacing on mobile */
     }
     #welcome-section {
-        margin-top: 100px;
+        margin-top: 250px;
             /* Ensure there's space above the welcome section */
         z-index: 1;
             /* Make sure it appears above other elements */
