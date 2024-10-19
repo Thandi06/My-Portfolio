@@ -613,8 +613,9 @@ footer{
         flex-direction: column;
         align-items: center;
         padding: 10px 0;
-        gap: 15px;  /* Spacing between links */
+        gap: 10px;  /* Spacing between links */
         text-align: center;
+        height: auto;
     }
 
     .nav-links {
@@ -643,12 +644,32 @@ footer{
         flex-direction: column;
         align-items: center;
         text-align: center;
-        padding: 20px 10px;
+        padding: 40px 10px;
             /* Adjust padding for better spacing on mobile */
-        gap: 20px;
-            /* Add spacing between elements */
     }
-
+    #welcome-section {
+        margin-top: 20px;
+            /* Ensure there's space above the welcome section */
+        z-index: 1;
+            /* Make sure it appears above other elements */
+        }
+    #first {
+        width: 100%;
+            /* Make sure the first div takes full width */
+        display: flex;
+            /* Flex display to allow proper alignment */
+        flex-direction: column;
+            /* Stack items vertically */
+        align-items: center;
+            /* Center content */
+        }
+    #second {
+    margin-top: 20px;
+    /* Space between welcome and second image */
+    display: flex;
+    justify-content: center;
+    /* Center the second image */
+}
     /* Home Section Adjustments */
     .home {
         padding: 20px 5%;
