@@ -502,35 +502,7 @@ footer{
     padding-bottom: 50px;
     
 }
-/* Media Query for Small Screens */
-@media (max-width: 600px) {
 
-        .nav-links {
-            display: flex;
-            flex-direction: column;
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 80px;
-            background-color:#f5f1fe;
-            padding: 10px;
-            z-index: 1;
-        }
-
-    .nav-links a {
-        font-size: 18px;
-        text-align: right;
-        padding: 10px 15;
-    }
-        /* When Checkbox is Checked, Show the Menu */
-    
-    #home{
-        grid-template-columns: 1fr;
-    }
-    .projects-container {
-        grid-template-columns: 1fr;
-    }
-}
 
 ::-webkit-scrollbar {
     width: 15px;
